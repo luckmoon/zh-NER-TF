@@ -16,8 +16,8 @@ config.gpu_options.per_process_gpu_memory_fraction = 0.2  # need ~700MB GPU memo
 
 ## hyperparameters
 parser = argparse.ArgumentParser(description='BiLSTM-CRF for Chinese NER task')
-parser.add_argument('--train_data', type=str, default='data_path', help='train data source')
-parser.add_argument('--test_data', type=str, default='data_path', help='test data source')
+parser.add_argument('--train_data', type=str, default='data_path2', help='train data source')
+parser.add_argument('--test_data', type=str, default='data_path2', help='test data source')
 parser.add_argument('--batch_size', type=int, default=64, help='#sample of each minibatch')
 parser.add_argument('--epoch', type=int, default=40, help='#epoch of training')
 parser.add_argument('--hidden_dim', type=int, default=300, help='#dim of hidden state')
